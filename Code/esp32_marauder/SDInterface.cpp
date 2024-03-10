@@ -6,17 +6,17 @@ bool SDInterface::initSD() {
   #ifdef HAS_SD
     String display_string = "";
 
-    #ifdef KIT
-      pinMode(SD_DET, INPUT);
-      if (digitalRead(SD_DET) == LOW) {
-        Serial.println(F("SD Card Detect Pin Detected"));
-      }
-      else {
-        Serial.println(F("SD Card Detect Pin Not Detected"));
-        this->supported = false;
-        return false;
-      }
-    #endif
+//    #ifdef KIT
+//      pinMode(SD_DET, INPUT);
+//      if (digitalRead(SD_DET) == LOW) {
+//        Serial.println(F("SD Card Detect Pin Detected"));
+//      }
+//      else {
+//        Serial.println(F("SD Card Detect Pin Not Detected"));
+//        this->supported = false;
+//        return false;
+//      }
+//    #endif
 
     pinMode(SD_CS, OUTPUT);
 

@@ -8,11 +8,11 @@
 
   //// BOARD TARGETS
   //#define MARAUDER_M5STICKC
-  #define MARAUDER_MINI
+  //#define MARAUDER_MINI
   //#define MARAUDER_V4
   //#define MARAUDER_V6
   //#define MARAUDER_V6_1
-  //#define MARAUDER_KIT
+  #define MARAUDER_KIT
   //#define GENERIC_ESP32
   //#define MARAUDER_FLIPPER
   //#define ESP32_LDDB
@@ -126,7 +126,7 @@
 
   #ifdef MARAUDER_KIT
     //#define FLIPPER_ZERO_HAT
-    #define HAS_BATTERY
+    //#define HAS_BATTERY
     #define HAS_BT
     //#define HAS_BUTTONS
     #define HAS_NEOPIXEL_LED
@@ -134,7 +134,7 @@
     #define HAS_SCREEN
     #define HAS_SD
     #define USE_SD
-    #define HAS_TEMP_SENSOR
+    //#define HAS_TEMP_SENSOR
     #define HAS_GPS
   #endif
 
@@ -521,7 +521,7 @@
         #define TFT_HEIGHT 320
       #endif
 
-      #define TFT_DIY
+      #define TFT_SHIELD
       #define KIT
     
       #define SCREEN_WIDTH TFT_WIDTH
